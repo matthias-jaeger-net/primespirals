@@ -13,7 +13,7 @@ String[] pattern = new String[factor];
 String[] numbers = new String[factor];
 
 void setup() {
-  size(1000, 1000);
+  size(900, 900);
   output = createWriter("output/spiral_" + factor + "/spiral_" + factor + ".md"); 
   font = createFont("font/Cousine-Regular.ttf", 12);
   // fill array with empty strings first
@@ -26,7 +26,7 @@ void setup() {
 
 void draw() {
   beginRecord(PDF, "output/spiral_" + factor + "/spiral_" +factor+".pdf");
-  background(255);
+  background(220);
   limit = int(width * 0.4);
   createSpiral();
   endRecord();
