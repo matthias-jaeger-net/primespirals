@@ -1,7 +1,7 @@
 import processing.pdf.*; 
 PrintWriter output;
 PFont font;
-int factor = 3;
+int factor = 4;
 int primefound = 0;
 int ir;
 int number = 1;
@@ -26,7 +26,7 @@ void setup() {
 
 void draw() {
   beginRecord(PDF, "output/spiral_" + factor + "/spiral_" +factor+".pdf");
-  background(220);
+  background(222);
   limit = int(width * 0.4);
   createSpiral();
   endRecord();
