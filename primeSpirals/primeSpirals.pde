@@ -1,16 +1,9 @@
-
-int factor = 3;
-
-
 import processing.pdf.*; 
 PrintWriter output;
+PFont font;
+int factor = 3;
 int primefound = 0;
 int ir;
-
-PFont font;
-
-
-
 int number = 1;
 int radius = 80;
 int spacing; 
@@ -21,7 +14,7 @@ String[] numbers = new String[factor];
 
 void setup() {
   size(1000, 1000);
-  output = createWriter("output/spiral_"+factor+"/spiral_"+factor+".txt"); 
+  output = createWriter("output/spiral_"+factor+".md"); 
   font = createFont("font/Cousine-Regular.ttf", 10);
   // fill array with empty strings first
   for (int i = 0; i < factor; i++) {
@@ -32,7 +25,7 @@ void setup() {
 }
 
 void draw() {
-  beginRecord(PDF, "output/spiral_"+factor+"/spiral_"+factor+".pdf");
+  beginRecord(PDF, "output/spiral_"+factor+".pdf");
   background(255);
   limit = int(width * 0.4);
   createSpiral();
