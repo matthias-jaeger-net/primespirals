@@ -2,15 +2,17 @@ void createInfo() {
   output.println("# Spiral No." + factor);
   output.println("");
   output.println("");
-  output.println("## Document size: " + width + "x" + height);
-  output.println("## Angle incement: TAU/" + factor);
-  output.println("## Radius increment: " + spacing);
-  output.println("## Initial radius: " + ir);
-  output.println("## Final radius: " + radius);
-  output.println("## Range: 1 - " + (number-1));
+  output.println("I created a spiral in an " + width + "by" + height + "document");
+  output.println("with an angle incement of TAU/" + factor);
+  output.println(". The rate of growth was " + spacing);
+  output.println("and the initial radius was " + ir);
+  output.println(". The algorithm stopped at the final radius: " + radius);
+  output.println("and created numbers ranging from 1 to " + (number-1) + ".");
+
+  output.println("# Numbers");
 
   for (int i = 0; i < numbers.length; i++) {
-    output.println("###" + (i+1) + "|" + numbers[i]);
+    output.println("1." + (i+1) + "|" + numbers[i]);
   }
   
   output.println("## Primes found: " + primefound);
