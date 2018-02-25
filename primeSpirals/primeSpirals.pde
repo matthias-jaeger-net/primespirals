@@ -12,11 +12,12 @@ int limit;
 String[] pattern = new String[factor];
 String[] numbers = new String[factor];
 
+String path = "output/spiral_" + factor + "/spiral_" + factor;
+
 void setup() {
   size(900, 900);
-  output = createWriter("output/spiral_" + factor + "/spiral_" + factor + ".md"); 
+  output = createWriter(path + ".md"); 
   font = createFont("font/Cousine-Regular.ttf", 12);
-  // fill array with empty strings first
   for (int i = 0; i < factor; i++) {
     pattern[i] = "";
     numbers[i] = "";
@@ -25,11 +26,10 @@ void setup() {
 }
 
 void draw() {
-  beginRecord(PDF, "output/spiral_" + factor + "/spiral_" +factor+".pdf");
+  beginRecord(PDF, path + ".pdf");
   background(224);
-  limit = int(width * 0.4);
   createSpiral();
   endRecord();
-  createOutput();
+  renderOutput();
   exit();
 }

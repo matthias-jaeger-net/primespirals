@@ -2,8 +2,8 @@ void createSpiral() {
 
   int current = 0;
 
-  while (radius <= limit) {    
-    numbers[current] += number + ", ";
+  while (radius <= int(width * 0.4)) {    
+    numbers[current] += number + " | ";
 
     if (isPrime(number)) {
       fill(255, 20, 20);
