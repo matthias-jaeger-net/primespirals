@@ -1,6 +1,6 @@
 # Spiral No.7
 
-![Spiral No. 7](output/spiral_7/spiral_7.jpg)
+![Spiral No. 7](spiral_7.jpg)
 
 I created a spiral in an 1000by1000document
 with an angle incement of TAU/7

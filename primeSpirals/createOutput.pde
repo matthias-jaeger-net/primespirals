@@ -1,7 +1,7 @@
 void createOutput() {
   output.println("# Spiral No." + factor);
   output.println("");
-  output.println("![Spiral No. "+factor+"](output/spiral_" + factor + "/spiral_" + factor + ".jpg)");
+  output.println("![Spiral No. "+factor+"](spiral_" + factor + ".jpg)");
   output.println("");
   output.println("I created a spiral in an " + width + "by" + height + "document");
   output.println("with an angle incement of TAU/" + factor);
