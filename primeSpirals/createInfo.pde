@@ -12,7 +12,7 @@ void createInfo() {
   output.println("# Numbers");
 
   for (int i = 0; i < numbers.length; i++) {
-    output.println("1." + (i+1) + "|" + numbers[i]);
+    output.println("*" + numbers[i]);
   }
   
   output.println("## Primes found: " + primefound);
