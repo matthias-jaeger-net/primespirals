@@ -16,13 +16,11 @@ void createOutput() {
     output.println("1. " + numbers[i]);
   }
   
-  output.println("## Primes found: " + primefound);
-
   output.println("");
-  output.println("## Prime pattern:");
+  output.println("## Pattern of " + primefound + "primes found:");
   
   for (int i = 0; i < pattern.length; i++) {
-    output.println("1. " + (i+1) + "|" + pattern[i]);
+    output.println("1. " + pattern[i]);
   }
   output.flush();
   output.close();

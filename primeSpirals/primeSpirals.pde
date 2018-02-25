@@ -26,7 +26,7 @@ void setup() {
 
 void draw() {
   beginRecord(PDF, "output/spiral_" + factor + "/spiral_" +factor+".pdf");
-  background(222);
+  background(223);
   limit = int(width * 0.4);
   createSpiral();
   endRecord();
