@@ -1,7 +1,7 @@
 import processing.pdf.*; 
 PrintWriter output;
 PFont font;
-int factor = 7;
+int factor = 3;
 int primefound = 0;
 int ir;
 int number = 1;
