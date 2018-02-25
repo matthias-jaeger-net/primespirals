@@ -1,7 +1,7 @@
 import processing.pdf.*; 
 PrintWriter output;
 PFont font;
-int factor = 33;
+int factor = 7;
 int primefound = 0;
 int ir;
 int number = 1;
@@ -15,7 +15,7 @@ String[] numbers = new String[factor];
 void setup() {
   size(1000, 1000);
   output = createWriter("output/spiral_" + factor + "/spiral_" + factor + ".md"); 
-  font = createFont("font/Cousine-Regular.ttf", 10);
+  font = createFont("font/Cousine-Regular.ttf", 12);
   // fill array with empty strings first
   for (int i = 0; i < factor; i++) {
     pattern[i] = "";
@@ -30,6 +30,6 @@ void draw() {
   limit = int(width * 0.4);
   createSpiral();
   endRecord();
-  createInfo();
+  createOutput();
   exit();
 }

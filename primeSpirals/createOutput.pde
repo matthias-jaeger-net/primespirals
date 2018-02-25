@@ -1,6 +1,7 @@
-void createInfo() {
+void createOutput() {
   output.println("# Spiral No." + factor);
   output.println("");
+  output.println("![Spiral No. "+factor+"](output/spiral_" + factor + "/spiral_" + factor + ".jpg)");
   output.println("");
   output.println("I created a spiral in an " + width + "by" + height + "document");
   output.println("with an angle incement of TAU/" + factor);
@@ -12,7 +13,7 @@ void createInfo() {
   output.println("# Numbers");
 
   for (int i = 0; i < numbers.length; i++) {
-    output.println("* " + numbers[i]);
+    output.println("1. " + numbers[i]);
   }
   
   output.println("## Primes found: " + primefound);
@@ -21,8 +22,10 @@ void createInfo() {
   output.println("## Prime pattern:");
   
   for (int i = 0; i < pattern.length; i++) {
-    output.println("* " + (i+1) + "|" + pattern[i]);
+    output.println("1. " + (i+1) + "|" + pattern[i]);
   }
   output.flush();
   output.close();
+  
+  saveFrame("output/spiral_" + factor + "/spiral_" + factor + ".jpg");
 }
