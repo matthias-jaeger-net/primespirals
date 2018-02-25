@@ -17,7 +17,7 @@ void createOutput() {
   }
   
   output.println("");
-  output.println("## Pattern of " + primefound + "primes found:");
+  output.println("## " + primefound + " primes found:");
   
   for (int i = 0; i < pattern.length; i++) {
     output.println("1. " + pattern[i]);
